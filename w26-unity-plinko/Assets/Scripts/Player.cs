@@ -6,14 +6,8 @@ public class Player : MonoBehaviour
 {
     public float speed = 5f;
     public GameObject discPrefab;
+    private GameObject currentDisc = null;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
         // Move player horizontally
@@ -23,10 +17,10 @@ public class Player : MonoBehaviour
         transform.position = position;
 
         // Drop disc
-        if(Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetKeyDown(KeyCode.Space) && currentDisc == null)
         {
             // Clone prefab
-            Instantiate(discPrefab, transform.position, Quaternion.identity);
+            currentDisc = Instantiate(discPrefab, transform.position, Quaternion.identity);
         }
     }
 }
