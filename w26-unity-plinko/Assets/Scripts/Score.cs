@@ -16,6 +16,5 @@ public class Score : MonoBehaviour
     {
         totalScore += points;
         scoreDisplay.text = $"SCORE: {totalScore}";
-        //Debug.Log($"Total score: {totalScore}");
     }
 }

@@ -9,7 +9,14 @@ public class Player : MonoBehaviour
     public CameraFollow cameraFollow;
     public GameObject discPrefab;
     private GameObject currentDisc = null;
+    public Sprite noDisc;
+    public Sprite haveDisc;
+    private SpriteRenderer spriteRenderer;
 
+    void Start()
+    {
+        spriteRenderer = GetComponent<SpriteRenderer>();
+    }
     void FixedUpdate()
     {
         // Move player horizontally
@@ -21,14 +28,19 @@ public class Player : MonoBehaviour
     }
 
     void Update()
-    {
+    {        
         // Drop disc
         if (Input.GetKeyDown(KeyCode.Space) && currentDisc == null)
         {
             // Clone prefab
             currentDisc = Instantiate(discPrefab, transform.position, Quaternion.identity);
+            spriteRenderer.sprite = noDisc;
             // Set camera to follow this
             cameraFollow.FollowTarget(currentDisc.transform);
+        }
+        else if (currentDisc == null)
+        {
+            spriteRenderer.sprite = haveDisc;
         }
     }
 }

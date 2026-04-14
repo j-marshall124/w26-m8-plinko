@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: 955173}
   - component: {fileID: 955175}
   - component: {fileID: 955174}
+  - component: {fileID: 955176}
   m_Layer: 0
   m_Name: Peg (10)
   m_TagString: Untagged
@@ -237,16 +238,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7607843, b: 0.36862746, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &955176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 955172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &4833894
 GameObject:
   m_ObjectHideFlags: 0
@@ -258,6 +279,7 @@ GameObject:
   - component: {fileID: 4833895}
   - component: {fileID: 4833897}
   - component: {fileID: 4833896}
+  - component: {fileID: 4833898}
   m_Layer: 0
   m_Name: Peg (4)
   m_TagString: Untagged
@@ -365,154 +387,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7607843, b: 0.36862746, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!1 &6710963
-GameObject:
+--- !u!114 &4833898
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6710964}
-  - component: {fileID: 6710966}
-  - component: {fileID: 6710965}
-  m_Layer: 0
-  m_Name: Square (5)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6710964
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6710963}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -16.0271, y: 4.1996, z: 0}
-  m_LocalScale: {x: 6.054293, y: 23.50617, z: 3}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1592082137}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &6710965
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6710963}
+  m_GameObject: {fileID: 4833894}
   m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
---- !u!212 &6710966
-SpriteRenderer:
-  serializedVersion: 2
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6710963}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 0.9098039, b: 0.23921569, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_SpriteSortPoint: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &29101457
 GameObject:
   m_ObjectHideFlags: 0
@@ -780,6 +684,7 @@ GameObject:
   - component: {fileID: 36502785}
   - component: {fileID: 36502787}
   - component: {fileID: 36502786}
+  - component: {fileID: 36502788}
   m_Layer: 0
   m_Name: Square (2)
   m_TagString: Untagged
@@ -795,13 +700,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 36502784}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0.38268352, w: 0.92387956}
+  m_LocalRotation: {x: 0, y: 0, z: 0.92387956, w: 0.38268343}
   m_LocalPosition: {x: -13, y: 4, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 2123668055}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -45}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 135}
 --- !u!61 &36502786
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -841,7 +746,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
+    newSize: {x: 0.33, y: 0.32}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -897,16 +802,38 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 0.9059909, b: 0.2358489, a: 1}
+  m_Sprite: {fileID: 9112916208930417683, guid: 8c47ef5ac5456694e9e8ed308521759b, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.33, y: 0.32}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!95 &36502788
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 36502784}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 740074a77a715564da6e2fdc57f230aa, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &42382358
 GameObject:
   m_ObjectHideFlags: 0
@@ -918,6 +845,7 @@ GameObject:
   - component: {fileID: 42382359}
   - component: {fileID: 42382361}
   - component: {fileID: 42382360}
+  - component: {fileID: 42382362}
   m_Layer: 0
   m_Name: Peg (7)
   m_TagString: Untagged
@@ -1025,16 +953,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7607843, b: 0.36862746, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &42382362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 42382358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &63576008
 GameObject:
   m_ObjectHideFlags: 0
@@ -1199,6 +1147,7 @@ GameObject:
   - component: {fileID: 78538918}
   - component: {fileID: 78538920}
   - component: {fileID: 78538919}
+  - component: {fileID: 78538921}
   m_Layer: 0
   m_Name: Peg (9)
   m_TagString: Untagged
@@ -1306,16 +1255,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7607843, b: 0.36862746, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &78538921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 78538917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &95506770
 GameObject:
   m_ObjectHideFlags: 0
@@ -1327,6 +1296,7 @@ GameObject:
   - component: {fileID: 95506771}
   - component: {fileID: 95506773}
   - component: {fileID: 95506772}
+  - component: {fileID: 95506774}
   m_Layer: 0
   m_Name: Peg (8)
   m_TagString: Untagged
@@ -1434,16 +1404,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7607843, b: 0.36862746, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &95506774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 95506770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &102228088
 GameObject:
   m_ObjectHideFlags: 0
@@ -1711,6 +1701,7 @@ GameObject:
   - component: {fileID: 158161024}
   - component: {fileID: 158161026}
   - component: {fileID: 158161025}
+  - component: {fileID: 158161027}
   m_Layer: 0
   m_Name: Peg (4)
   m_TagString: Untagged
@@ -1818,16 +1809,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7574297, b: 0.3679244, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &158161027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 158161023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &180008720
 GameObject:
   m_ObjectHideFlags: 0
@@ -1967,6 +1978,7 @@ GameObject:
   - component: {fileID: 182975848}
   - component: {fileID: 182975850}
   - component: {fileID: 182975849}
+  - component: {fileID: 182975851}
   m_Layer: 0
   m_Name: Peg (1)
   m_TagString: Untagged
@@ -2074,16 +2086,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7607843, b: 0.36862746, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &182975851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182975847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &249356124
 GameObject:
   m_ObjectHideFlags: 0
@@ -2095,6 +2127,7 @@ GameObject:
   - component: {fileID: 249356125}
   - component: {fileID: 249356127}
   - component: {fileID: 249356126}
+  - component: {fileID: 249356128}
   m_Layer: 0
   m_Name: Peg (3)
   m_TagString: Untagged
@@ -2202,16 +2235,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7574297, b: 0.3679244, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &249356128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 249356124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &256369055
 GameObject:
   m_ObjectHideFlags: 0
@@ -2351,6 +2404,7 @@ GameObject:
   - component: {fileID: 315581642}
   - component: {fileID: 315581644}
   - component: {fileID: 315581643}
+  - component: {fileID: 315581645}
   m_Layer: 0
   m_Name: Peg (1)
   m_TagString: Untagged
@@ -2458,16 +2512,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7607843, b: 0.36862746, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &315581645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 315581641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &336164416
 GameObject:
   m_ObjectHideFlags: 0
@@ -2479,6 +2553,7 @@ GameObject:
   - component: {fileID: 336164417}
   - component: {fileID: 336164419}
   - component: {fileID: 336164418}
+  - component: {fileID: 336164420}
   m_Layer: 0
   m_Name: Peg (8)
   m_TagString: Untagged
@@ -2586,16 +2661,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7574297, b: 0.3679244, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &336164420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 336164416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &338317109
 GameObject:
   m_ObjectHideFlags: 0
@@ -2607,6 +2702,7 @@ GameObject:
   - component: {fileID: 338317110}
   - component: {fileID: 338317112}
   - component: {fileID: 338317111}
+  - component: {fileID: 338317113}
   m_Layer: 0
   m_Name: Peg (4)
   m_TagString: Untagged
@@ -2714,12 +2810,170 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7607843, b: 0.36862746, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_SpriteSortPoint: 0
+--- !u!114 &338317113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 338317109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
+--- !u!1 &355659034
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 355659035}
+  - component: {fileID: 355659037}
+  - component: {fileID: 355659036}
+  m_Layer: 0
+  m_Name: Square (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &355659035
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 355659034}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -26.3129, y: 0.18, z: 0}
+  m_LocalScale: {x: 6.054293, y: 47.01234, z: 3}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 943248740}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &355659036
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 355659034}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 1.7986563, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0.3125, y: 0, z: 0.3125, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 2}
+    newSize: {x: 4.373774, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 1
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.78130746, y: 1}
+  m_EdgeRadius: 0
+--- !u!212 &355659037
+SpriteRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 355659034}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_Sprite: {fileID: 21300000, guid: 24cfbe19fcde38c4484122991742413b, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 1
+  m_Size: {x: 4.373774, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -2735,6 +2989,7 @@ GameObject:
   - component: {fileID: 386386477}
   - component: {fileID: 386386479}
   - component: {fileID: 386386478}
+  - component: {fileID: 386386480}
   m_Layer: 0
   m_Name: Peg (3)
   m_TagString: Untagged
@@ -2842,16 +3097,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7607843, b: 0.36862746, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &386386480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 386386476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &393942835
 GameObject:
   m_ObjectHideFlags: 0
@@ -2863,6 +3138,7 @@ GameObject:
   - component: {fileID: 393942836}
   - component: {fileID: 393942838}
   - component: {fileID: 393942837}
+  - component: {fileID: 393942839}
   m_Layer: 0
   m_Name: Peg (9)
   m_TagString: Untagged
@@ -2970,16 +3246,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7574297, b: 0.3679244, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &393942839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 393942835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &398208622
 GameObject:
   m_ObjectHideFlags: 0
@@ -3590,6 +3886,7 @@ GameObject:
   - component: {fileID: 428130581}
   - component: {fileID: 428130583}
   - component: {fileID: 428130582}
+  - component: {fileID: 428130584}
   m_Layer: 0
   m_Name: Peg (6)
   m_TagString: Untagged
@@ -3697,16 +3994,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7574297, b: 0.3679244, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &428130584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 428130580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &431400083
 GameObject:
   m_ObjectHideFlags: 0
@@ -3871,6 +4188,7 @@ GameObject:
   - component: {fileID: 446475099}
   - component: {fileID: 446475101}
   - component: {fileID: 446475100}
+  - component: {fileID: 446475102}
   m_Layer: 0
   m_Name: Peg (4)
   m_TagString: Untagged
@@ -3978,16 +4296,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7607843, b: 0.36862746, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &446475102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 446475098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &463382229
 GameObject:
   m_ObjectHideFlags: 0
@@ -3999,6 +4337,7 @@ GameObject:
   - component: {fileID: 463382230}
   - component: {fileID: 463382232}
   - component: {fileID: 463382231}
+  - component: {fileID: 463382233}
   m_Layer: 0
   m_Name: Peg (5)
   m_TagString: Untagged
@@ -4106,16 +4445,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7607843, b: 0.36862746, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &463382233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 463382229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &484337926
 GameObject:
   m_ObjectHideFlags: 0
@@ -4168,6 +4527,7 @@ GameObject:
   - component: {fileID: 509195486}
   - component: {fileID: 509195488}
   - component: {fileID: 509195487}
+  - component: {fileID: 509195489}
   m_Layer: 0
   m_Name: Peg (7)
   m_TagString: Untagged
@@ -4275,16 +4635,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7607843, b: 0.36862746, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &509195489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 509195485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &510317963
 GameObject:
   m_ObjectHideFlags: 0
@@ -4296,6 +4676,7 @@ GameObject:
   - component: {fileID: 510317964}
   - component: {fileID: 510317966}
   - component: {fileID: 510317965}
+  - component: {fileID: 510317967}
   m_Layer: 0
   m_Name: Peg (10)
   m_TagString: Untagged
@@ -4403,16 +4784,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7607843, b: 0.36862746, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &510317967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 510317963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -4520,7 +4921,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 10
+  orthographic size: 12
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -4565,6 +4966,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CameraFollow
   followTarget: {fileID: 0}
   player: {fileID: 940586826}
+  lerpSpeed: 0.3
+  cameraY: 9
 --- !u!1 &523203016
 GameObject:
   m_ObjectHideFlags: 0
@@ -4756,6 +5159,7 @@ GameObject:
   - component: {fileID: 575576724}
   - component: {fileID: 575576726}
   - component: {fileID: 575576725}
+  - component: {fileID: 575576727}
   m_Layer: 0
   m_Name: Peg (9)
   m_TagString: Untagged
@@ -4863,16 +5267,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7607843, b: 0.36862746, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &575576727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 575576723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &604831384
 GameObject:
   m_ObjectHideFlags: 0
@@ -5126,144 +5550,6 @@ Transform:
   - {fileID: 807005785}
   m_Father: {fileID: 1445853195}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &641169780
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 641169781}
-  - component: {fileID: 641169783}
-  - component: {fileID: 641169782}
-  m_Layer: 0
-  m_Name: Square (3)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &641169781
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 641169780}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0.38268352, w: 0.92387956}
-  m_LocalPosition: {x: -13, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 3}
-  m_ConstrainProportionsScale: 1
-  m_Children: []
-  m_Father: {fileID: 1592082137}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -45}
---- !u!61 &641169782
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 641169780}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
---- !u!212 &641169783
-SpriteRenderer:
-  serializedVersion: 2
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 641169780}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 0.9098039, b: 0.23921569, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_SpriteSortPoint: 0
 --- !u!1 &655017300
 GameObject:
   m_ObjectHideFlags: 0
@@ -5403,6 +5689,7 @@ GameObject:
   - component: {fileID: 663822947}
   - component: {fileID: 663822949}
   - component: {fileID: 663822948}
+  - component: {fileID: 663822950}
   m_Layer: 0
   m_Name: Peg (1)
   m_TagString: Untagged
@@ -5510,16 +5797,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7607843, b: 0.36862746, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &663822950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 663822946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &677733006
 GameObject:
   m_ObjectHideFlags: 0
@@ -5572,6 +5879,7 @@ GameObject:
   - component: {fileID: 679941977}
   - component: {fileID: 679941979}
   - component: {fileID: 679941978}
+  - component: {fileID: 679941980}
   m_Layer: 0
   m_Name: Peg (9)
   m_TagString: Untagged
@@ -5679,16 +5987,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7607843, b: 0.36862746, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &679941980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 679941976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &680052908
 GameObject:
   m_ObjectHideFlags: 0
@@ -5817,6 +6145,167 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &689820556
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 689820557}
+  - component: {fileID: 689820560}
+  - component: {fileID: 689820559}
+  - component: {fileID: 689820558}
+  m_Layer: 0
+  m_Name: Square (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &689820557
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 689820556}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0.92387956, w: 0.38268343}
+  m_LocalPosition: {x: -13, y: -8, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 943248740}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 135}
+--- !u!95 &689820558
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 689820556}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 740074a77a715564da6e2fdc57f230aa, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!61 &689820559
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 689820556}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 0.33, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!212 &689820560
+SpriteRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 689820556}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_Sprite: {fileID: 9112916208930417683, guid: 8c47ef5ac5456694e9e8ed308521759b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.33, y: 0.32}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_SpriteSortPoint: 0
 --- !u!1 &704454130
 GameObject:
   m_ObjectHideFlags: 0
@@ -5828,6 +6317,7 @@ GameObject:
   - component: {fileID: 704454131}
   - component: {fileID: 704454133}
   - component: {fileID: 704454132}
+  - component: {fileID: 704454134}
   m_Layer: 0
   m_Name: Peg (6)
   m_TagString: Untagged
@@ -5935,16 +6425,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7607843, b: 0.36862746, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &704454134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 704454130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &707195647
 GameObject:
   m_ObjectHideFlags: 0
@@ -5956,6 +6466,7 @@ GameObject:
   - component: {fileID: 707195648}
   - component: {fileID: 707195650}
   - component: {fileID: 707195649}
+  - component: {fileID: 707195651}
   m_Layer: 0
   m_Name: Peg (5)
   m_TagString: Untagged
@@ -6063,16 +6574,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7607843, b: 0.36862746, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &707195651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 707195647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &709600539
 GameObject:
   m_ObjectHideFlags: 0
@@ -6212,6 +6743,7 @@ GameObject:
   - component: {fileID: 714172097}
   - component: {fileID: 714172099}
   - component: {fileID: 714172098}
+  - component: {fileID: 714172100}
   m_Layer: 0
   m_Name: Peg (7)
   m_TagString: Untagged
@@ -6319,12 +6851,193 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7607843, b: 0.36862746, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
+  m_Size: {x: 0.06, y: 0.06}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_SpriteSortPoint: 0
+--- !u!114 &714172100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 714172096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
+--- !u!1 &725987779
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 725987780}
+  - component: {fileID: 725987783}
+  - component: {fileID: 725987782}
+  - component: {fileID: 725987781}
+  m_Layer: 0
+  m_Name: Square (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &725987780
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 725987779}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0.92387956, w: 0.38268343}
+  m_LocalPosition: {x: -13, y: 4, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 943248740}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 135}
+--- !u!95 &725987781
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 725987779}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 740074a77a715564da6e2fdc57f230aa, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!61 &725987782
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 725987779}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 0.33, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!212 &725987783
+SpriteRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 725987779}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_Sprite: {fileID: 9112916208930417683, guid: 8c47ef5ac5456694e9e8ed308521759b, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.33, y: 0.32}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -6382,6 +7095,7 @@ GameObject:
   - component: {fileID: 743575224}
   - component: {fileID: 743575226}
   - component: {fileID: 743575225}
+  - component: {fileID: 743575227}
   m_Layer: 0
   m_Name: Peg (8)
   m_TagString: Untagged
@@ -6489,16 +7203,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7607843, b: 0.36862746, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &743575227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 743575223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &782097324
 GameObject:
   m_ObjectHideFlags: 0
@@ -6638,6 +7372,7 @@ GameObject:
   - component: {fileID: 782821257}
   - component: {fileID: 782821259}
   - component: {fileID: 782821258}
+  - component: {fileID: 782821260}
   m_Layer: 0
   m_Name: Peg (7)
   m_TagString: Untagged
@@ -6745,16 +7480,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7607843, b: 0.36862746, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &782821260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 782821256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &807005784
 GameObject:
   m_ObjectHideFlags: 0
@@ -6766,6 +7521,7 @@ GameObject:
   - component: {fileID: 807005785}
   - component: {fileID: 807005787}
   - component: {fileID: 807005786}
+  - component: {fileID: 807005788}
   m_Layer: 0
   m_Name: Peg (10)
   m_TagString: Untagged
@@ -6873,16 +7629,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7607843, b: 0.36862746, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &807005788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 807005784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &813236974
 GameObject:
   m_ObjectHideFlags: 0
@@ -7033,6 +7809,7 @@ GameObject:
   - component: {fileID: 819883892}
   - component: {fileID: 819883894}
   - component: {fileID: 819883893}
+  - component: {fileID: 819883895}
   m_Layer: 0
   m_Name: Peg (5)
   m_TagString: Untagged
@@ -7140,16 +7917,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7607843, b: 0.36862746, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &819883895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 819883891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &826760992
 GameObject:
   m_ObjectHideFlags: 0
@@ -7289,6 +8086,7 @@ GameObject:
   - component: {fileID: 837759987}
   - component: {fileID: 837759989}
   - component: {fileID: 837759988}
+  - component: {fileID: 837759990}
   m_Layer: 0
   m_Name: Peg (2)
   m_TagString: Untagged
@@ -7396,16 +8194,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7574297, b: 0.3679244, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &837759990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 837759986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &857237781
 GameObject:
   m_ObjectHideFlags: 0
@@ -7417,6 +8235,7 @@ GameObject:
   - component: {fileID: 857237782}
   - component: {fileID: 857237784}
   - component: {fileID: 857237783}
+  - component: {fileID: 857237785}
   m_Layer: 0
   m_Name: Peg (7)
   m_TagString: Untagged
@@ -7524,16 +8343,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7607843, b: 0.36862746, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &857237785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 857237781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &860818276
 GameObject:
   m_ObjectHideFlags: 0
@@ -7597,6 +8436,7 @@ GameObject:
   - component: {fileID: 892111895}
   - component: {fileID: 892111897}
   - component: {fileID: 892111896}
+  - component: {fileID: 892111898}
   m_Layer: 0
   m_Name: Peg (3)
   m_TagString: Untagged
@@ -7704,16 +8544,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7607843, b: 0.36862746, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &892111898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 892111894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &894711306
 GameObject:
   m_ObjectHideFlags: 0
@@ -8017,6 +8877,7 @@ GameObject:
   - component: {fileID: 936960126}
   - component: {fileID: 936960128}
   - component: {fileID: 936960127}
+  - component: {fileID: 936960129}
   m_Layer: 0
   m_Name: Peg (3)
   m_TagString: Untagged
@@ -8124,16 +8985,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7607843, b: 0.36862746, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &936960129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936960125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &940586823
 GameObject:
   m_ObjectHideFlags: 0
@@ -8147,7 +9028,7 @@ GameObject:
   - component: {fileID: 940586824}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8168,6 +9049,8 @@ MonoBehaviour:
   speed: 10
   cameraFollow: {fileID: 519420033}
   discPrefab: {fileID: 4162841314622922260, guid: 4d6347ea8d782f546b72ace4dcbce123, type: 3}
+  noDisc: {fileID: 3462458782216154018, guid: 369c69280b93cca49ba3d6eee384363e, type: 3}
+  haveDisc: {fileID: -5062699720780018656, guid: 369c69280b93cca49ba3d6eee384363e, type: 3}
 --- !u!212 &940586825
 SpriteRenderer:
   serializedVersion: 2
@@ -8217,8 +9100,8 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
-  m_Color: {r: 0.0082069095, g: 1, b: 0.003144443, a: 1}
+  m_Sprite: {fileID: -5062699720780018656, guid: 369c69280b93cca49ba3d6eee384363e, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -8235,13 +9118,49 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 940586823}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -1, w: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &943248739
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 943248740}
+  m_Layer: 0
+  m_Name: Wall (R)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &943248740
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 943248739}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 689820557}
+  - {fileID: 725987780}
+  - {fileID: 2096969164}
+  - {fileID: 1791979388}
+  - {fileID: 355659035}
+  m_Father: {fileID: 1445853195}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!1 &947136798
 GameObject:
   m_ObjectHideFlags: 0
@@ -8253,6 +9172,7 @@ GameObject:
   - component: {fileID: 947136799}
   - component: {fileID: 947136801}
   - component: {fileID: 947136800}
+  - component: {fileID: 947136802}
   m_Layer: 0
   m_Name: Peg (3)
   m_TagString: Untagged
@@ -8360,16 +9280,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7607843, b: 0.36862746, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &947136802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 947136798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &968343614
 GameObject:
   m_ObjectHideFlags: 0
@@ -8381,6 +9321,7 @@ GameObject:
   - component: {fileID: 968343615}
   - component: {fileID: 968343617}
   - component: {fileID: 968343616}
+  - component: {fileID: 968343618}
   m_Layer: 0
   m_Name: Peg (7)
   m_TagString: Untagged
@@ -8488,16 +9429,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7574297, b: 0.3679244, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &968343618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 968343614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &977019565
 GameObject:
   m_ObjectHideFlags: 0
@@ -8509,6 +9470,7 @@ GameObject:
   - component: {fileID: 977019566}
   - component: {fileID: 977019568}
   - component: {fileID: 977019567}
+  - component: {fileID: 977019569}
   m_Layer: 0
   m_Name: Peg (8)
   m_TagString: Untagged
@@ -8616,16 +9578,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7607843, b: 0.36862746, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &977019569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 977019565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &1018221594
 GameObject:
   m_ObjectHideFlags: 0
@@ -8637,6 +9619,7 @@ GameObject:
   - component: {fileID: 1018221595}
   - component: {fileID: 1018221597}
   - component: {fileID: 1018221596}
+  - component: {fileID: 1018221598}
   m_Layer: 0
   m_Name: Peg (4)
   m_TagString: Untagged
@@ -8744,16 +9727,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7607843, b: 0.36862746, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1018221598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1018221594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &1107805047
 GameObject:
   m_ObjectHideFlags: 0
@@ -8893,6 +9896,7 @@ GameObject:
   - component: {fileID: 1132679099}
   - component: {fileID: 1132679101}
   - component: {fileID: 1132679100}
+  - component: {fileID: 1132679102}
   m_Layer: 0
   m_Name: Peg (11)
   m_TagString: Untagged
@@ -9000,16 +10004,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7607843, b: 0.36862746, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1132679102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1132679098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &1132724393
 GameObject:
   m_ObjectHideFlags: 0
@@ -9037,8 +10061,8 @@ Transform:
   m_GameObject: {fileID: 1132724393}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -16.0271, y: 0.1996, z: 0}
-  m_LocalScale: {x: 6.054293, y: 23.50617, z: 3}
+  m_LocalPosition: {x: -26.3129, y: 0.18, z: 0}
+  m_LocalScale: {x: 6.054293, y: 47.01234, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2123668055}
@@ -9077,17 +10101,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 1.7986563, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
+    border: {x: 0.3125, y: 0, z: 0.3125, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
+    oldSize: {x: 1, y: 2}
+    newSize: {x: 4.373774, y: 1}
     adaptiveTilingThreshold: 0.5
-    drawMode: 0
+    drawMode: 1
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.78130746, y: 1}
   m_EdgeRadius: 0
 --- !u!212 &1132724396
 SpriteRenderer:
@@ -9138,12 +10162,12 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 0.9059909, b: 0.2358489, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 24cfbe19fcde38c4484122991742413b, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_DrawMode: 1
+  m_Size: {x: 4.373774, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -9159,6 +10183,7 @@ GameObject:
   - component: {fileID: 1135218348}
   - component: {fileID: 1135218350}
   - component: {fileID: 1135218349}
+  - component: {fileID: 1135218351}
   m_Layer: 0
   m_Name: Peg (4)
   m_TagString: Untagged
@@ -9266,154 +10291,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7607843, b: 0.36862746, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!1 &1138343008
-GameObject:
+--- !u!114 &1135218351
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1138343009}
-  - component: {fileID: 1138343011}
-  - component: {fileID: 1138343010}
-  m_Layer: 0
-  m_Name: Square (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1138343009
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1138343008}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0.38268352, w: 0.92387956}
-  m_LocalPosition: {x: -13, y: 8, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 3}
-  m_ConstrainProportionsScale: 1
-  m_Children: []
-  m_Father: {fileID: 1592082137}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -45}
---- !u!61 &1138343010
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1138343008}
+  m_GameObject: {fileID: 1135218347}
   m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
---- !u!212 &1138343011
-SpriteRenderer:
-  serializedVersion: 2
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1138343008}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 0.9098039, b: 0.23921569, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_SpriteSortPoint: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &1143697704
 GameObject:
   m_ObjectHideFlags: 0
@@ -9425,6 +10332,7 @@ GameObject:
   - component: {fileID: 1143697705}
   - component: {fileID: 1143697707}
   - component: {fileID: 1143697706}
+  - component: {fileID: 1143697708}
   m_Layer: 0
   m_Name: Peg (4)
   m_TagString: Untagged
@@ -9532,16 +10440,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7607843, b: 0.36862746, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1143697708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1143697704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &1155950227
 GameObject:
   m_ObjectHideFlags: 0
@@ -9553,6 +10481,7 @@ GameObject:
   - component: {fileID: 1155950228}
   - component: {fileID: 1155950230}
   - component: {fileID: 1155950229}
+  - component: {fileID: 1155950231}
   m_Layer: 0
   m_Name: Peg (9)
   m_TagString: Untagged
@@ -9660,16 +10589,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7607843, b: 0.36862746, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1155950231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155950227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &1171773149
 GameObject:
   m_ObjectHideFlags: 0
@@ -9681,6 +10630,7 @@ GameObject:
   - component: {fileID: 1171773150}
   - component: {fileID: 1171773152}
   - component: {fileID: 1171773151}
+  - component: {fileID: 1171773153}
   m_Layer: 0
   m_Name: Peg (9)
   m_TagString: Untagged
@@ -9788,16 +10738,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7607843, b: 0.36862746, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1171773153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1171773149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &1199492375
 GameObject:
   m_ObjectHideFlags: 0
@@ -9809,6 +10779,7 @@ GameObject:
   - component: {fileID: 1199492376}
   - component: {fileID: 1199492378}
   - component: {fileID: 1199492377}
+  - component: {fileID: 1199492379}
   m_Layer: 0
   m_Name: Peg (8)
   m_TagString: Untagged
@@ -9916,16 +10887,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7607843, b: 0.36862746, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1199492379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199492375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &1204842398
 GameObject:
   m_ObjectHideFlags: 0
@@ -9937,6 +10928,7 @@ GameObject:
   - component: {fileID: 1204842399}
   - component: {fileID: 1204842401}
   - component: {fileID: 1204842400}
+  - component: {fileID: 1204842402}
   m_Layer: 0
   m_Name: Peg (2)
   m_TagString: Untagged
@@ -10044,16 +11036,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7607843, b: 0.36862746, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1204842402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1204842398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &1207655393
 GameObject:
   m_ObjectHideFlags: 0
@@ -10065,6 +11077,7 @@ GameObject:
   - component: {fileID: 1207655394}
   - component: {fileID: 1207655396}
   - component: {fileID: 1207655395}
+  - component: {fileID: 1207655397}
   m_Layer: 0
   m_Name: Peg (6)
   m_TagString: Untagged
@@ -10172,16 +11185,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7607843, b: 0.36862746, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1207655397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1207655393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &1230474643
 GameObject:
   m_ObjectHideFlags: 0
@@ -10193,6 +11226,7 @@ GameObject:
   - component: {fileID: 1230474644}
   - component: {fileID: 1230474646}
   - component: {fileID: 1230474645}
+  - component: {fileID: 1230474647}
   m_Layer: 0
   m_Name: Peg (2)
   m_TagString: Untagged
@@ -10300,16 +11334,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7607843, b: 0.36862746, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1230474647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1230474643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &1265174293
 GameObject:
   m_ObjectHideFlags: 0
@@ -10474,6 +11528,7 @@ GameObject:
   - component: {fileID: 1284522585}
   - component: {fileID: 1284522587}
   - component: {fileID: 1284522586}
+  - component: {fileID: 1284522588}
   m_Layer: 0
   m_Name: Peg (3)
   m_TagString: Untagged
@@ -10581,16 +11636,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7607843, b: 0.36862746, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1284522588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1284522584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &1287414791
 GameObject:
   m_ObjectHideFlags: 0
@@ -10857,6 +11932,7 @@ GameObject:
   - component: {fileID: 1370045561}
   - component: {fileID: 1370045563}
   - component: {fileID: 1370045562}
+  - component: {fileID: 1370045564}
   m_Layer: 0
   m_Name: Peg (2)
   m_TagString: Untagged
@@ -10964,16 +12040,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7607843, b: 0.36862746, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1370045564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1370045560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &1371322155
 GameObject:
   m_ObjectHideFlags: 0
@@ -10985,6 +12081,7 @@ GameObject:
   - component: {fileID: 1371322156}
   - component: {fileID: 1371322158}
   - component: {fileID: 1371322157}
+  - component: {fileID: 1371322159}
   m_Layer: 0
   m_Name: Peg (6)
   m_TagString: Untagged
@@ -11092,16 +12189,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7607843, b: 0.36862746, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1371322159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1371322155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &1372575772
 GameObject:
   m_ObjectHideFlags: 0
@@ -11113,6 +12230,7 @@ GameObject:
   - component: {fileID: 1372575773}
   - component: {fileID: 1372575775}
   - component: {fileID: 1372575774}
+  - component: {fileID: 1372575776}
   m_Layer: 0
   m_Name: Peg (11)
   m_TagString: Untagged
@@ -11220,16 +12338,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7607843, b: 0.36862746, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1372575776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1372575772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &1445853194
 GameObject:
   m_ObjectHideFlags: 0
@@ -11268,9 +12406,10 @@ Transform:
   - {fileID: 2002381680}
   - {fileID: 484337927}
   - {fileID: 2123668055}
-  - {fileID: 1592082137}
+  - {fileID: 943248740}
   - {fileID: 1287414792}
   - {fileID: 860818277}
+  - {fileID: 1502518338}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1451859864
@@ -11284,6 +12423,7 @@ GameObject:
   - component: {fileID: 1451859865}
   - component: {fileID: 1451859867}
   - component: {fileID: 1451859866}
+  - component: {fileID: 1451859868}
   m_Layer: 0
   m_Name: Peg (5)
   m_TagString: Untagged
@@ -11391,16 +12531,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7574297, b: 0.3679244, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1451859868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1451859864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &1488372867
 GameObject:
   m_ObjectHideFlags: 0
@@ -11412,6 +12572,7 @@ GameObject:
   - component: {fileID: 1488372869}
   - component: {fileID: 1488372868}
   - component: {fileID: 1488372870}
+  - component: {fileID: 1488372871}
   m_Layer: 0
   m_Name: Peg (1)
   m_TagString: Untagged
@@ -11468,12 +12629,12 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7574297, b: 0.3679244, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -11529,6 +12690,178 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.49999997
+--- !u!114 &1488372871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1488372867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
+--- !u!1 &1502518337
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1502518338}
+  - component: {fileID: 1502518340}
+  - component: {fileID: 1502518339}
+  - component: {fileID: 1502518341}
+  m_Layer: 0
+  m_Name: Bumper
+  m_TagString: Bumper
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1502518338
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1502518337}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: -0.92387956, w: 0.38268343}
+  m_LocalPosition: {x: -11, y: -9, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1445853195}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -135}
+--- !u!95 &1502518339
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1502518337}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 280dbad523c8ec746b6492cc0e68b46c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!212 &1502518340
+SpriteRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1502518337}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_Sprite: {fileID: 8014063057066179264, guid: 6f0e4885faebc524eb7bcd26c213f645, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 1
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_SpriteSortPoint: 0
+--- !u!70 &1502518341
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1502518337}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.02314436, y: -0.0128387185}
+  m_Size: {x: 1.1031483, y: 3.9339585}
+  m_Direction: 0
 --- !u!1 &1515474322
 GameObject:
   m_ObjectHideFlags: 0
@@ -11693,6 +13026,7 @@ GameObject:
   - component: {fileID: 1518128274}
   - component: {fileID: 1518128276}
   - component: {fileID: 1518128275}
+  - component: {fileID: 1518128277}
   m_Layer: 0
   m_Name: Peg (1)
   m_TagString: Untagged
@@ -11800,16 +13134,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7607843, b: 0.36862746, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1518128277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1518128273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &1518534106
 GameObject:
   m_ObjectHideFlags: 0
@@ -11821,6 +13175,7 @@ GameObject:
   - component: {fileID: 1518534107}
   - component: {fileID: 1518534109}
   - component: {fileID: 1518534108}
+  - component: {fileID: 1518534110}
   m_Layer: 0
   m_Name: Peg (11)
   m_TagString: Untagged
@@ -11928,16 +13283,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7607843, b: 0.36862746, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1518534110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1518534106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &1539029750
 GameObject:
   m_ObjectHideFlags: 0
@@ -11949,6 +13324,7 @@ GameObject:
   - component: {fileID: 1539029751}
   - component: {fileID: 1539029753}
   - component: {fileID: 1539029752}
+  - component: {fileID: 1539029754}
   m_Layer: 0
   m_Name: Peg (5)
   m_TagString: Untagged
@@ -12056,16 +13432,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7607843, b: 0.36862746, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1539029754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539029750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &1579555074
 GameObject:
   m_ObjectHideFlags: 0
@@ -12077,6 +13473,7 @@ GameObject:
   - component: {fileID: 1579555075}
   - component: {fileID: 1579555077}
   - component: {fileID: 1579555076}
+  - component: {fileID: 1579555078}
   m_Layer: 0
   m_Name: Peg (10)
   m_TagString: Untagged
@@ -12184,52 +13581,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7607843, b: 0.36862746, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!1 &1592082136
-GameObject:
+--- !u!114 &1579555078
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1592082137}
-  m_Layer: 0
-  m_Name: Wall (R)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1592082137
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1592082136}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: 0, y: 4.1996, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1138343009}
-  - {fileID: 1891180347}
-  - {fileID: 641169781}
-  - {fileID: 1862167529}
-  - {fileID: 6710964}
-  m_Father: {fileID: 1445853195}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+  m_GameObject: {fileID: 1579555074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &1595727145
 GameObject:
   m_ObjectHideFlags: 0
@@ -12422,6 +13803,7 @@ GameObject:
   - component: {fileID: 1640899749}
   - component: {fileID: 1640899751}
   - component: {fileID: 1640899750}
+  - component: {fileID: 1640899752}
   m_Layer: 0
   m_Name: Square (1)
   m_TagString: Untagged
@@ -12437,13 +13819,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1640899748}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0.38268352, w: 0.92387956}
+  m_LocalRotation: {x: 0, y: 0, z: 0.92387956, w: 0.38268343}
   m_LocalPosition: {x: -13, y: 8, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 2123668055}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -45}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 135}
 --- !u!61 &1640899750
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12483,7 +13865,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
+    newSize: {x: 0.33, y: 0.32}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -12539,16 +13921,38 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 0.9059909, b: 0.2358489, a: 1}
+  m_Sprite: {fileID: 9112916208930417683, guid: 8c47ef5ac5456694e9e8ed308521759b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.33, y: 0.32}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!95 &1640899752
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1640899748}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 740074a77a715564da6e2fdc57f230aa, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1643338442
 GameObject:
   m_ObjectHideFlags: 0
@@ -12560,6 +13964,7 @@ GameObject:
   - component: {fileID: 1643338443}
   - component: {fileID: 1643338445}
   - component: {fileID: 1643338444}
+  - component: {fileID: 1643338446}
   m_Layer: 0
   m_Name: Peg (7)
   m_TagString: Untagged
@@ -12667,16 +14072,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7607843, b: 0.36862746, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1643338446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1643338442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &1668488728
 GameObject:
   m_ObjectHideFlags: 0
@@ -12688,6 +14113,7 @@ GameObject:
   - component: {fileID: 1668488729}
   - component: {fileID: 1668488731}
   - component: {fileID: 1668488730}
+  - component: {fileID: 1668488732}
   m_Layer: 0
   m_Name: Peg (10)
   m_TagString: Untagged
@@ -12795,16 +14221,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7607843, b: 0.36862746, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1668488732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1668488728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &1701811541
 GameObject:
   m_ObjectHideFlags: 0
@@ -12918,6 +14364,7 @@ GameObject:
   - component: {fileID: 1705110225}
   - component: {fileID: 1705110227}
   - component: {fileID: 1705110226}
+  - component: {fileID: 1705110228}
   m_Layer: 0
   m_Name: Peg (6)
   m_TagString: Untagged
@@ -13025,16 +14472,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7607843, b: 0.36862746, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1705110228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1705110224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &1713989464
 GameObject:
   m_ObjectHideFlags: 0
@@ -13046,6 +14513,7 @@ GameObject:
   - component: {fileID: 1713989465}
   - component: {fileID: 1713989467}
   - component: {fileID: 1713989466}
+  - component: {fileID: 1713989468}
   m_Layer: 0
   m_Name: Peg (11)
   m_TagString: Untagged
@@ -13153,16 +14621,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7574297, b: 0.3679244, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1713989468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1713989464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &1733796055
 GameObject:
   m_ObjectHideFlags: 0
@@ -13327,6 +14815,7 @@ GameObject:
   - component: {fileID: 1751410043}
   - component: {fileID: 1751410045}
   - component: {fileID: 1751410044}
+  - component: {fileID: 1751410046}
   m_Layer: 0
   m_Name: Peg (1)
   m_TagString: Untagged
@@ -13434,16 +14923,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7607843, b: 0.36862746, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1751410046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1751410042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &1763361248
 GameObject:
   m_ObjectHideFlags: 0
@@ -13455,6 +14964,7 @@ GameObject:
   - component: {fileID: 1763361249}
   - component: {fileID: 1763361251}
   - component: {fileID: 1763361250}
+  - component: {fileID: 1763361252}
   m_Layer: 0
   m_Name: Peg (2)
   m_TagString: Untagged
@@ -13562,16 +15072,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7607843, b: 0.36862746, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1763361252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1763361248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &1780509119
 GameObject:
   m_ObjectHideFlags: 0
@@ -13700,6 +15230,167 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &1791979387
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1791979388}
+  - component: {fileID: 1791979391}
+  - component: {fileID: 1791979390}
+  - component: {fileID: 1791979389}
+  m_Layer: 0
+  m_Name: Square (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1791979388
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1791979387}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0.92387956, w: 0.38268343}
+  m_LocalPosition: {x: -13, y: -4, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 943248740}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 135}
+--- !u!95 &1791979389
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1791979387}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 740074a77a715564da6e2fdc57f230aa, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!61 &1791979390
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1791979387}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 0.33, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!212 &1791979391
+SpriteRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1791979387}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_Sprite: {fileID: 9112916208930417683, guid: 8c47ef5ac5456694e9e8ed308521759b, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.33, y: 0.32}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_SpriteSortPoint: 0
 --- !u!1 &1811639863
 GameObject:
   m_ObjectHideFlags: 0
@@ -13711,6 +15402,7 @@ GameObject:
   - component: {fileID: 1811639864}
   - component: {fileID: 1811639866}
   - component: {fileID: 1811639865}
+  - component: {fileID: 1811639867}
   m_Layer: 0
   m_Name: Peg (8)
   m_TagString: Untagged
@@ -13818,16 +15510,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7607843, b: 0.36862746, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1811639867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1811639863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &1812074672
 GameObject:
   m_ObjectHideFlags: 0
@@ -13839,6 +15551,7 @@ GameObject:
   - component: {fileID: 1812074673}
   - component: {fileID: 1812074675}
   - component: {fileID: 1812074674}
+  - component: {fileID: 1812074676}
   m_Layer: 0
   m_Name: Peg (6)
   m_TagString: Untagged
@@ -13946,16 +15659,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7607843, b: 0.36862746, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1812074676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1812074672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &1812349773
 GameObject:
   m_ObjectHideFlags: 0
@@ -13967,6 +15700,7 @@ GameObject:
   - component: {fileID: 1812349774}
   - component: {fileID: 1812349776}
   - component: {fileID: 1812349775}
+  - component: {fileID: 1812349777}
   m_Layer: 0
   m_Name: Peg (6)
   m_TagString: Untagged
@@ -14074,16 +15808,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7607843, b: 0.36862746, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1812349777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1812349773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &1852114436
 GameObject:
   m_ObjectHideFlags: 0
@@ -14095,6 +15849,7 @@ GameObject:
   - component: {fileID: 1852114437}
   - component: {fileID: 1852114439}
   - component: {fileID: 1852114438}
+  - component: {fileID: 1852114440}
   m_Layer: 0
   m_Name: Peg (10)
   m_TagString: Untagged
@@ -14202,154 +15957,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7607843, b: 0.36862746, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!1 &1862167528
-GameObject:
+--- !u!114 &1852114440
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1862167529}
-  - component: {fileID: 1862167531}
-  - component: {fileID: 1862167530}
-  m_Layer: 0
-  m_Name: Square (4)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1862167529
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1862167528}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0.38268352, w: 0.92387956}
-  m_LocalPosition: {x: -13, y: -4, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 3}
-  m_ConstrainProportionsScale: 1
-  m_Children: []
-  m_Father: {fileID: 1592082137}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -45}
---- !u!61 &1862167530
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1862167528}
+  m_GameObject: {fileID: 1852114436}
   m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
---- !u!212 &1862167531
-SpriteRenderer:
-  serializedVersion: 2
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1862167528}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 0.9098039, b: 0.23921569, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_SpriteSortPoint: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &1869654591
 GameObject:
   m_ObjectHideFlags: 0
@@ -14361,6 +15998,7 @@ GameObject:
   - component: {fileID: 1869654592}
   - component: {fileID: 1869654594}
   - component: {fileID: 1869654593}
+  - component: {fileID: 1869654595}
   m_Layer: 0
   m_Name: Peg (1)
   m_TagString: Untagged
@@ -14468,154 +16106,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7607843, b: 0.36862746, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!1 &1891180346
-GameObject:
+--- !u!114 &1869654595
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1891180347}
-  - component: {fileID: 1891180349}
-  - component: {fileID: 1891180348}
-  m_Layer: 0
-  m_Name: Square (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1891180347
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1891180346}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0.38268352, w: 0.92387956}
-  m_LocalPosition: {x: -13, y: 4, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 3}
-  m_ConstrainProportionsScale: 1
-  m_Children: []
-  m_Father: {fileID: 1592082137}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -45}
---- !u!61 &1891180348
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1891180346}
+  m_GameObject: {fileID: 1869654591}
   m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
---- !u!212 &1891180349
-SpriteRenderer:
-  serializedVersion: 2
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1891180346}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 0.9098039, b: 0.23921569, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_SpriteSortPoint: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &1907934805
 GameObject:
   m_ObjectHideFlags: 0
@@ -14627,6 +16147,7 @@ GameObject:
   - component: {fileID: 1907934806}
   - component: {fileID: 1907934808}
   - component: {fileID: 1907934807}
+  - component: {fileID: 1907934809}
   m_Layer: 0
   m_Name: Peg (9)
   m_TagString: Untagged
@@ -14734,16 +16255,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7607843, b: 0.36862746, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1907934809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1907934805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &1910486957
 GameObject:
   m_ObjectHideFlags: 0
@@ -14755,6 +16296,7 @@ GameObject:
   - component: {fileID: 1910486958}
   - component: {fileID: 1910486960}
   - component: {fileID: 1910486959}
+  - component: {fileID: 1910486961}
   m_Layer: 0
   m_Name: Peg (8)
   m_TagString: Untagged
@@ -14862,16 +16404,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7607843, b: 0.36862746, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1910486961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1910486957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &1944165158
 GameObject:
   m_ObjectHideFlags: 0
@@ -14883,6 +16445,7 @@ GameObject:
   - component: {fileID: 1944165159}
   - component: {fileID: 1944165161}
   - component: {fileID: 1944165160}
+  - component: {fileID: 1944165162}
   m_Layer: 0
   m_Name: Peg (3)
   m_TagString: Untagged
@@ -14990,16 +16553,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7607843, b: 0.36862746, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1944165162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944165158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &1963724011
 GameObject:
   m_ObjectHideFlags: 0
@@ -15011,6 +16594,7 @@ GameObject:
   - component: {fileID: 1963724012}
   - component: {fileID: 1963724014}
   - component: {fileID: 1963724013}
+  - component: {fileID: 1963724015}
   m_Layer: 0
   m_Name: Peg (5)
   m_TagString: Untagged
@@ -15118,16 +16702,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7607843, b: 0.36862746, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1963724015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1963724011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &1976049311
 GameObject:
   m_ObjectHideFlags: 0
@@ -15139,6 +16743,7 @@ GameObject:
   - component: {fileID: 1976049312}
   - component: {fileID: 1976049314}
   - component: {fileID: 1976049313}
+  - component: {fileID: 1976049315}
   m_Layer: 0
   m_Name: Square (3)
   m_TagString: Untagged
@@ -15154,13 +16759,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1976049311}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0.38268352, w: 0.92387956}
+  m_LocalRotation: {x: 0, y: 0, z: 0.92387956, w: 0.38268343}
   m_LocalPosition: {x: -13, y: 0, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 2123668055}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -45}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 135}
 --- !u!61 &1976049313
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15200,7 +16805,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
+    newSize: {x: 0.33, y: 0.32}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -15256,16 +16861,38 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 0.9059909, b: 0.2358489, a: 1}
+  m_Sprite: {fileID: 9112916208930417683, guid: 8c47ef5ac5456694e9e8ed308521759b, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.33, y: 0.32}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!95 &1976049315
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1976049311}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 740074a77a715564da6e2fdc57f230aa, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1994047819
 GameObject:
   m_ObjectHideFlags: 0
@@ -15447,6 +17074,7 @@ GameObject:
   - component: {fileID: 2032640368}
   - component: {fileID: 2032640370}
   - component: {fileID: 2032640369}
+  - component: {fileID: 2032640371}
   m_Layer: 0
   m_Name: Peg (2)
   m_TagString: Untagged
@@ -15554,16 +17182,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7607843, b: 0.36862746, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &2032640371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2032640367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &2071758636
 GameObject:
   m_ObjectHideFlags: 0
@@ -15575,6 +17223,7 @@ GameObject:
   - component: {fileID: 2071758637}
   - component: {fileID: 2071758639}
   - component: {fileID: 2071758638}
+  - component: {fileID: 2071758640}
   m_Layer: 0
   m_Name: Square (4)
   m_TagString: Untagged
@@ -15590,13 +17239,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2071758636}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0.38268352, w: 0.92387956}
+  m_LocalRotation: {x: 0, y: 0, z: 0.92387956, w: 0.38268343}
   m_LocalPosition: {x: -13, y: -4, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 2123668055}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -45}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 135}
 --- !u!61 &2071758638
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15636,7 +17285,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
+    newSize: {x: 0.33, y: 0.32}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -15692,12 +17341,195 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 0.9059909, b: 0.2358489, a: 1}
+  m_Sprite: {fileID: 9112916208930417683, guid: 8c47ef5ac5456694e9e8ed308521759b, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
+  m_Size: {x: 0.33, y: 0.32}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_SpriteSortPoint: 0
+--- !u!95 &2071758640
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2071758636}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 740074a77a715564da6e2fdc57f230aa, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &2096969163
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2096969164}
+  - component: {fileID: 2096969167}
+  - component: {fileID: 2096969166}
+  - component: {fileID: 2096969165}
+  m_Layer: 0
+  m_Name: Square (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2096969164
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2096969163}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0.92387956, w: 0.38268343}
+  m_LocalPosition: {x: -13, y: 0, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 943248740}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 135}
+--- !u!95 &2096969165
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2096969163}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 740074a77a715564da6e2fdc57f230aa, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!61 &2096969166
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2096969163}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 0.33, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!212 &2096969167
+SpriteRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2096969163}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_Sprite: {fileID: 9112916208930417683, guid: 8c47ef5ac5456694e9e8ed308521759b, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.33, y: 0.32}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -15713,6 +17545,7 @@ GameObject:
   - component: {fileID: 2107266423}
   - component: {fileID: 2107266425}
   - component: {fileID: 2107266424}
+  - component: {fileID: 2107266426}
   m_Layer: 0
   m_Name: Peg (2)
   m_TagString: Untagged
@@ -15820,16 +17653,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7607843, b: 0.36862746, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &2107266426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2107266422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &2122042649
 GameObject:
   m_ObjectHideFlags: 0
@@ -15841,6 +17694,7 @@ GameObject:
   - component: {fileID: 2122042650}
   - component: {fileID: 2122042652}
   - component: {fileID: 2122042651}
+  - component: {fileID: 2122042653}
   m_Layer: 0
   m_Name: Peg (10)
   m_TagString: Untagged
@@ -15948,16 +17802,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7574297, b: 0.3679244, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &2122042653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2122042649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1 &2123668054
 GameObject:
   m_ObjectHideFlags: 0
@@ -16005,6 +17879,7 @@ GameObject:
   - component: {fileID: 2142343261}
   - component: {fileID: 2142343263}
   - component: {fileID: 2142343262}
+  - component: {fileID: 2142343264}
   m_Layer: 0
   m_Name: Peg (5)
   m_TagString: Untagged
@@ -16112,16 +17987,36 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.7607843, b: 0.36862746, a: 1}
+  m_Sprite: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  m_Color: {r: 1, g: 0.9960785, b: 0.9215687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.06, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &2142343264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2142343260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e86e81677f43c04d9d8325b35706c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pointsLevel1: 10
+  pointsLevel2: 25
+  pointsLevel3: 50
+  unlitPeg: {fileID: 2811220824401896937, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level1Peg: {fileID: -7684058358524859579, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
+  score: {fileID: 860818278}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
