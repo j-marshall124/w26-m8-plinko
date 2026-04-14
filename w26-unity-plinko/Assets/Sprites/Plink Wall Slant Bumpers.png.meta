@@ -1,16 +1,16 @@
 fileFormatVersion: 2
-guid: 6f0e4885faebc524eb7bcd26c213f645
+guid: 1a1f8837c6b0092438480a961eb6893d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8014063057066179264
-    second: Plinko Bumpers_0
+      213: 1432600929763049397
+    second: Plink Wall Slant Bumpers_0
   - first:
-      213: 2827295074692452294
-    second: Plinko Bumpers_1
+      213: 3576695274729374981
+    second: Plink Wall Slant Bumpers_1
   - first:
-      213: 4224476195431332375
-    second: Plinko Bumpers_2
+      213: -4049512068116540798
+    second: Plink Wall Slant Bumpers_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -57,7 +57,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 8
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -106,13 +106,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Plinko Bumpers_0
+      name: Plink Wall Slant Bumpers_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 9
-        height: 31
+        width: 65
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,20 +121,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0cab20cd3eba73f60800000000000000
-      internalID: 8014063057066179264
+      spriteID: 5bfbb6394fe91e310800000000000000
+      internalID: 1432600929763049397
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Plinko Bumpers_1
+      name: Plink Wall Slant Bumpers_1
       rect:
         serializedVersion: 2
-        x: 10
+        x: 66
         y: 0
-        width: 9
-        height: 31
+        width: 65
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,20 +143,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6cf414a04e19c3720800000000000000
-      internalID: 2827295074692452294
+      spriteID: 5050018f669f2a130800000000000000
+      internalID: 3576695274729374981
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Plinko Bumpers_2
+      name: Plink Wall Slant Bumpers_2
       rect:
         serializedVersion: 2
-        x: 20
+        x: 132
         y: 0
-        width: 9
-        height: 31
+        width: 65
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,8 +165,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 71a37cea7ba50aa30800000000000000
-      internalID: 4224476195431332375
+      spriteID: 2829142ba3e3dc7c0800000000000000
+      internalID: -4049512068116540798
       vertices: []
       indices: 
       edges: []
@@ -175,7 +175,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: e4a9fdd0511b1d44a823a84dbb38274c
+    spriteID: 44509156c88b8144998506d085ea6593
     internalID: 0
     vertices: []
     indices: 
@@ -185,9 +185,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Plinko Bumpers_0: 8014063057066179264
-      Plinko Bumpers_1: 2827295074692452294
-      Plinko Bumpers_2: 4224476195431332375
+      Plink Wall Slant Bumpers_0: 1432600929763049397
+      Plink Wall Slant Bumpers_1: 3576695274729374981
+      Plink Wall Slant Bumpers_2: -4049512068116540798
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
