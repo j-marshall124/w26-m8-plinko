@@ -9,3 +9,5 @@ Pegs have 3 levels:
 Level 1: 10 points  
 Level 2: 25 points  
 Level 3: 50 points  
+
+Well points are labelled above the corresponding well
