@@ -268,6 +268,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &4833894
 GameObject:
   m_ObjectHideFlags: 0
@@ -417,6 +419,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &22946794
 GameObject:
   m_ObjectHideFlags: 0
@@ -723,6 +727,7 @@ GameObject:
   - component: {fileID: 36502787}
   - component: {fileID: 36502786}
   - component: {fileID: 36502788}
+  - component: {fileID: 36502789}
   m_Layer: 0
   m_Name: Square (2)
   m_TagString: Untagged
@@ -755,7 +760,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 480003ab6833d594ca7a89f5fd5a0a0a, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -872,6 +877,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &36502789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 36502784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8d95aa75877d1448a825e9dad9467a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WallBumper
+  audioSource: {fileID: 1374038665}
+  audioClip: {fileID: 8300000, guid: 1897e9d0efcd2e44da92779f3f5f8b33, type: 3}
 --- !u!1 &42382358
 GameObject:
   m_ObjectHideFlags: 0
@@ -1021,6 +1040,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &63576008
 GameObject:
   m_ObjectHideFlags: 0
@@ -1069,6 +1090,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScoreArea
   points: 100
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: 2ffadb850a29ac44d8388c42554220d2, type: 3}
 --- !u!61 &63576011
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1186,6 +1209,7 @@ GameObject:
   - component: {fileID: 74721664}
   - component: {fileID: 74721663}
   - component: {fileID: 74721662}
+  - component: {fileID: 74721665}
   m_Layer: 0
   m_Name: Divider (3)
   m_TagString: Untagged
@@ -1326,6 +1350,20 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &74721665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 74721660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8d95aa75877d1448a825e9dad9467a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WallBumper
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &76252354
 GameObject:
   m_ObjectHideFlags: 0
@@ -1607,6 +1645,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &95506770
 GameObject:
   m_ObjectHideFlags: 0
@@ -1756,6 +1796,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &137235974
 GameObject:
   m_ObjectHideFlags: 0
@@ -1980,6 +2022,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &166540119
 GameObject:
   m_ObjectHideFlags: 0
@@ -1992,6 +2036,7 @@ GameObject:
   - component: {fileID: 166540123}
   - component: {fileID: 166540122}
   - component: {fileID: 166540121}
+  - component: {fileID: 166540124}
   m_Layer: 0
   m_Name: Divider (4)
   m_TagString: Untagged
@@ -2132,6 +2177,20 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &166540124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166540119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8d95aa75877d1448a825e9dad9467a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WallBumper
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &168573909
 GameObject:
   m_ObjectHideFlags: 0
@@ -2218,6 +2277,7 @@ GameObject:
   - component: {fileID: 171482522}
   - component: {fileID: 171482524}
   - component: {fileID: 171482523}
+  - component: {fileID: 171482525}
   m_Layer: 0
   m_Name: Divider (8)
   m_TagString: Untagged
@@ -2336,6 +2396,20 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &171482525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171482521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8d95aa75877d1448a825e9dad9467a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WallBumper
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &180008720
 GameObject:
   m_ObjectHideFlags: 0
@@ -2613,6 +2687,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &185009687
 GameObject:
   m_ObjectHideFlags: 0
@@ -2648,6 +2724,7 @@ RectTransform:
   - {fileID: 2127039160}
   - {fileID: 1322273438}
   - {fileID: 76252355}
+  - {fileID: 2049882082}
   m_Father: {fileID: 1701811545}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2945,6 +3022,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &256369055
 GameObject:
   m_ObjectHideFlags: 0
@@ -3222,6 +3301,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &330737358
 GameObject:
   m_ObjectHideFlags: 0
@@ -3462,6 +3543,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &338317109
 GameObject:
   m_ObjectHideFlags: 0
@@ -3611,6 +3694,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &355659034
 GameObject:
   m_ObjectHideFlags: 0
@@ -3898,6 +3983,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &393942835
 GameObject:
   m_ObjectHideFlags: 0
@@ -4047,6 +4134,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &401312388
 GameObject:
   m_ObjectHideFlags: 0
@@ -4360,6 +4449,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScoreArea
   points: 2500
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: 445977657c58bdf419bccebb15a0bcac, type: 3}
 --- !u!61 &407775110
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4731,6 +4822,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &431400083
 GameObject:
   m_ObjectHideFlags: 0
@@ -4779,6 +4872,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScoreArea
   points: 250
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: 2ffadb850a29ac44d8388c42554220d2, type: 3}
 --- !u!61 &431400086
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5124,6 +5219,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &462993117
 GameObject:
   m_ObjectHideFlags: 0
@@ -5364,6 +5461,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &484337926
 GameObject:
   m_ObjectHideFlags: 0
@@ -5554,6 +5653,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &510317963
 GameObject:
   m_ObjectHideFlags: 0
@@ -5703,6 +5804,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &513546061
 GameObject:
   m_ObjectHideFlags: 0
@@ -6138,6 +6241,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &604831384
 GameObject:
   m_ObjectHideFlags: 0
@@ -6540,6 +6645,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &677733006
 GameObject:
   m_ObjectHideFlags: 0
@@ -6805,6 +6912,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &689820556
 GameObject:
   m_ObjectHideFlags: 0
@@ -6817,6 +6926,7 @@ GameObject:
   - component: {fileID: 689820560}
   - component: {fileID: 689820559}
   - component: {fileID: 689820558}
+  - component: {fileID: 689820561}
   m_Layer: 0
   m_Name: Square (1)
   m_TagString: Untagged
@@ -6871,7 +6981,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 480003ab6833d594ca7a89f5fd5a0a0a, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -6966,6 +7076,20 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &689820561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 689820556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8d95aa75877d1448a825e9dad9467a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WallBumper
+  audioSource: {fileID: 1374038665}
+  audioClip: {fileID: 8300000, guid: 1897e9d0efcd2e44da92779f3f5f8b33, type: 3}
 --- !u!1 &693710573
 GameObject:
   m_ObjectHideFlags: 0
@@ -7057,6 +7181,135 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &694061687
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 694061689}
+  - component: {fileID: 694061688}
+  m_Layer: 0
+  m_Name: BGM
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &694061688
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 694061687}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 78f33226f9d74924aa5f5bc553f20871, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.2
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &694061689
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 694061687}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.1408, y: -1.45493, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &704454130
 GameObject:
   m_ObjectHideFlags: 0
@@ -7206,6 +7459,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &707195647
 GameObject:
   m_ObjectHideFlags: 0
@@ -7355,6 +7610,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &714172096
 GameObject:
   m_ObjectHideFlags: 0
@@ -7504,6 +7761,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &725987779
 GameObject:
   m_ObjectHideFlags: 0
@@ -7516,6 +7775,7 @@ GameObject:
   - component: {fileID: 725987783}
   - component: {fileID: 725987782}
   - component: {fileID: 725987781}
+  - component: {fileID: 725987784}
   m_Layer: 0
   m_Name: Square (2)
   m_TagString: Untagged
@@ -7570,7 +7830,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 480003ab6833d594ca7a89f5fd5a0a0a, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -7665,6 +7925,20 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &725987784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 725987779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8d95aa75877d1448a825e9dad9467a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WallBumper
+  audioSource: {fileID: 1374038665}
+  audioClip: {fileID: 8300000, guid: 1897e9d0efcd2e44da92779f3f5f8b33, type: 3}
 --- !u!1 &729812744
 GameObject:
   m_ObjectHideFlags: 0
@@ -7856,6 +8130,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &782097324
 GameObject:
   m_ObjectHideFlags: 0
@@ -8133,6 +8409,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &788795392
 GameObject:
   m_ObjectHideFlags: 0
@@ -8145,6 +8423,7 @@ GameObject:
   - component: {fileID: 788795396}
   - component: {fileID: 788795395}
   - component: {fileID: 788795394}
+  - component: {fileID: 788795397}
   m_Layer: 0
   m_Name: Square (5)
   m_TagString: Untagged
@@ -8199,7 +8478,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 480003ab6833d594ca7a89f5fd5a0a0a, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -8294,6 +8573,20 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &788795397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 788795392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8d95aa75877d1448a825e9dad9467a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WallBumper
+  audioSource: {fileID: 1374038665}
+  audioClip: {fileID: 8300000, guid: 1897e9d0efcd2e44da92779f3f5f8b33, type: 3}
 --- !u!1 &807005784
 GameObject:
   m_ObjectHideFlags: 0
@@ -8443,6 +8736,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &819883891
 GameObject:
   m_ObjectHideFlags: 0
@@ -8592,6 +8887,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &826760992
 GameObject:
   m_ObjectHideFlags: 0
@@ -8869,6 +9166,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &857237781
 GameObject:
   m_ObjectHideFlags: 0
@@ -9018,6 +9317,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &860818276
 GameObject:
   m_ObjectHideFlags: 0
@@ -9295,6 +9596,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &894711306
 GameObject:
   m_ObjectHideFlags: 0
@@ -9306,6 +9609,7 @@ GameObject:
   - component: {fileID: 894711307}
   - component: {fileID: 894711308}
   - component: {fileID: 894711309}
+  - component: {fileID: 894711310}
   m_Layer: 0
   m_Name: Divider (1)
   m_TagString: Untagged
@@ -9424,6 +9728,20 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1.338266, y: 2.2608414}
   m_Direction: 0
+--- !u!114 &894711310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 894711306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8d95aa75877d1448a825e9dad9467a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WallBumper
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &935415776
 GameObject:
   m_ObjectHideFlags: 0
@@ -9472,6 +9790,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScoreArea
   points: 500
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: 2ffadb850a29ac44d8388c42554220d2, type: 3}
 --- !u!61 &935415779
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9726,6 +10046,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &940586823
 GameObject:
   m_ObjectHideFlags: 0
@@ -10065,6 +10387,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &958723472
 GameObject:
   m_ObjectHideFlags: 0
@@ -10305,6 +10629,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &977019565
 GameObject:
   m_ObjectHideFlags: 0
@@ -10454,6 +10780,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &1017532908
 GameObject:
   m_ObjectHideFlags: 0
@@ -10466,6 +10794,7 @@ GameObject:
   - component: {fileID: 1017532912}
   - component: {fileID: 1017532911}
   - component: {fileID: 1017532910}
+  - component: {fileID: 1017532913}
   m_Layer: 0
   m_Name: Divider (6)
   m_TagString: Untagged
@@ -10606,6 +10935,20 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1017532913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1017532908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8d95aa75877d1448a825e9dad9467a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WallBumper
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &1018221594
 GameObject:
   m_ObjectHideFlags: 0
@@ -10755,6 +11098,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &1061451523
 GameObject:
   m_ObjectHideFlags: 0
@@ -11182,6 +11527,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &1132724393
 GameObject:
   m_ObjectHideFlags: 0
@@ -11469,6 +11816,137 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
+--- !u!1 &1136156913
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1136156915}
+  - component: {fileID: 1136156914}
+  m_Layer: 0
+  m_Name: Sound Effects
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1136156914
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1136156913}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1136156915
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1136156913}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.1408, y: -1.45493, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1143697704
 GameObject:
   m_ObjectHideFlags: 0
@@ -11618,6 +12096,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &1155950227
 GameObject:
   m_ObjectHideFlags: 0
@@ -11767,6 +12247,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &1171773149
 GameObject:
   m_ObjectHideFlags: 0
@@ -11916,6 +12398,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &1199024757
 GameObject:
   m_ObjectHideFlags: 0
@@ -11928,6 +12412,7 @@ GameObject:
   - component: {fileID: 1199024761}
   - component: {fileID: 1199024760}
   - component: {fileID: 1199024759}
+  - component: {fileID: 1199024762}
   m_Layer: 0
   m_Name: Divider (5)
   m_TagString: Untagged
@@ -12068,6 +12553,20 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1199024762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199024757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8d95aa75877d1448a825e9dad9467a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WallBumper
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &1199492375
 GameObject:
   m_ObjectHideFlags: 0
@@ -12217,6 +12716,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &1204842398
 GameObject:
   m_ObjectHideFlags: 0
@@ -12366,6 +12867,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &1207655393
 GameObject:
   m_ObjectHideFlags: 0
@@ -12515,6 +13018,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &1207828981
 GameObject:
   m_ObjectHideFlags: 0
@@ -12739,6 +13244,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &1265174293
 GameObject:
   m_ObjectHideFlags: 0
@@ -12787,6 +13294,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScoreArea
   points: 500
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: 2ffadb850a29ac44d8388c42554220d2, type: 3}
 --- !u!61 &1265174296
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13041,6 +13550,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &1287414791
 GameObject:
   m_ObjectHideFlags: 0
@@ -13536,6 +14047,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &1371322155
 GameObject:
   m_ObjectHideFlags: 0
@@ -13685,6 +14198,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &1372575772
 GameObject:
   m_ObjectHideFlags: 0
@@ -13834,6 +14349,137 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
+--- !u!1 &1374038664
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1374038666}
+  - component: {fileID: 1374038665}
+  m_Layer: 0
+  m_Name: Sound Effects Wall
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1374038665
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1374038664}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 0.4
+  m_Pitch: 0.5
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1374038666
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1374038664}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.1408, y: -1.45493, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1445853194
 GameObject:
   m_ObjectHideFlags: 0
@@ -14029,6 +14675,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &1488372867
 GameObject:
   m_ObjectHideFlags: 0
@@ -14178,6 +14826,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &1515474322
 GameObject:
   m_ObjectHideFlags: 0
@@ -14226,6 +14876,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScoreArea
   points: 100
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: 2ffadb850a29ac44d8388c42554220d2, type: 3}
 --- !u!61 &1515474325
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14480,6 +15132,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &1518534106
 GameObject:
   m_ObjectHideFlags: 0
@@ -14629,6 +15283,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &1539029750
 GameObject:
   m_ObjectHideFlags: 0
@@ -14778,6 +15434,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &1579555074
 GameObject:
   m_ObjectHideFlags: 0
@@ -14927,6 +15585,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &1596868748
 GameObject:
   m_ObjectHideFlags: 0
@@ -15072,6 +15732,7 @@ GameObject:
   - component: {fileID: 1640899751}
   - component: {fileID: 1640899750}
   - component: {fileID: 1640899752}
+  - component: {fileID: 1640899753}
   m_Layer: 0
   m_Name: Square (1)
   m_TagString: Untagged
@@ -15104,7 +15765,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 480003ab6833d594ca7a89f5fd5a0a0a, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -15221,6 +15882,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1640899753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1640899748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8d95aa75877d1448a825e9dad9467a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WallBumper
+  audioSource: {fileID: 1374038665}
+  audioClip: {fileID: 8300000, guid: 1897e9d0efcd2e44da92779f3f5f8b33, type: 3}
 --- !u!1 &1643338442
 GameObject:
   m_ObjectHideFlags: 0
@@ -15370,6 +16045,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &1668488728
 GameObject:
   m_ObjectHideFlags: 0
@@ -15519,6 +16196,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &1701811541
 GameObject:
   m_ObjectHideFlags: 0
@@ -15794,6 +16473,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &1713989464
 GameObject:
   m_ObjectHideFlags: 0
@@ -15943,6 +16624,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &1733796055
 GameObject:
   m_ObjectHideFlags: 0
@@ -15991,6 +16674,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScoreArea
   points: 250
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: 2ffadb850a29ac44d8388c42554220d2, type: 3}
 --- !u!61 &1733796058
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16245,6 +16930,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &1763361248
 GameObject:
   m_ObjectHideFlags: 0
@@ -16394,6 +17081,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &1791979387
 GameObject:
   m_ObjectHideFlags: 0
@@ -16406,6 +17095,7 @@ GameObject:
   - component: {fileID: 1791979391}
   - component: {fileID: 1791979390}
   - component: {fileID: 1791979389}
+  - component: {fileID: 1791979392}
   m_Layer: 0
   m_Name: Square (4)
   m_TagString: Untagged
@@ -16460,7 +17150,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 480003ab6833d594ca7a89f5fd5a0a0a, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -16555,6 +17245,20 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1791979392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1791979387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8d95aa75877d1448a825e9dad9467a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WallBumper
+  audioSource: {fileID: 1374038665}
+  audioClip: {fileID: 8300000, guid: 1897e9d0efcd2e44da92779f3f5f8b33, type: 3}
 --- !u!1 &1811639863
 GameObject:
   m_ObjectHideFlags: 0
@@ -16704,6 +17408,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &1812074672
 GameObject:
   m_ObjectHideFlags: 0
@@ -16853,6 +17559,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &1812349773
 GameObject:
   m_ObjectHideFlags: 0
@@ -17002,6 +17710,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &1825952102
 GameObject:
   m_ObjectHideFlags: 0
@@ -17014,6 +17724,7 @@ GameObject:
   - component: {fileID: 1825952106}
   - component: {fileID: 1825952105}
   - component: {fileID: 1825952104}
+  - component: {fileID: 1825952107}
   m_Layer: 0
   m_Name: Divider (2)
   m_TagString: Untagged
@@ -17154,6 +17865,20 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1825952107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1825952102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8d95aa75877d1448a825e9dad9467a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WallBumper
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &1852114436
 GameObject:
   m_ObjectHideFlags: 0
@@ -17303,6 +18028,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &1869654591
 GameObject:
   m_ObjectHideFlags: 0
@@ -17452,6 +18179,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &1873565449
 GameObject:
   m_ObjectHideFlags: 0
@@ -17464,6 +18193,7 @@ GameObject:
   - component: {fileID: 1873565453}
   - component: {fileID: 1873565452}
   - component: {fileID: 1873565451}
+  - component: {fileID: 1873565454}
   m_Layer: 0
   m_Name: Divider (7)
   m_TagString: Untagged
@@ -17604,6 +18334,20 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1873565454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873565449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8d95aa75877d1448a825e9dad9467a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WallBumper
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &1907934805
 GameObject:
   m_ObjectHideFlags: 0
@@ -17753,6 +18497,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &1910486957
 GameObject:
   m_ObjectHideFlags: 0
@@ -17902,6 +18648,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &1944165158
 GameObject:
   m_ObjectHideFlags: 0
@@ -18051,6 +18799,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &1963724011
 GameObject:
   m_ObjectHideFlags: 0
@@ -18200,6 +18950,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &1973305365
 GameObject:
   m_ObjectHideFlags: 0
@@ -18212,6 +18964,7 @@ GameObject:
   - component: {fileID: 1973305369}
   - component: {fileID: 1973305368}
   - component: {fileID: 1973305367}
+  - component: {fileID: 1973305370}
   m_Layer: 0
   m_Name: Square (5)
   m_TagString: Untagged
@@ -18266,7 +19019,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 480003ab6833d594ca7a89f5fd5a0a0a, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -18361,6 +19114,20 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1973305370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1973305365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8d95aa75877d1448a825e9dad9467a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WallBumper
+  audioSource: {fileID: 1374038665}
+  audioClip: {fileID: 8300000, guid: 1897e9d0efcd2e44da92779f3f5f8b33, type: 3}
 --- !u!1 &1976049311
 GameObject:
   m_ObjectHideFlags: 0
@@ -18373,6 +19140,7 @@ GameObject:
   - component: {fileID: 1976049314}
   - component: {fileID: 1976049313}
   - component: {fileID: 1976049315}
+  - component: {fileID: 1976049316}
   m_Layer: 0
   m_Name: Square (3)
   m_TagString: Untagged
@@ -18405,7 +19173,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 480003ab6833d594ca7a89f5fd5a0a0a, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -18522,6 +19290,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1976049316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1976049311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8d95aa75877d1448a825e9dad9467a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WallBumper
+  audioSource: {fileID: 1374038665}
+  audioClip: {fileID: 8300000, guid: 1897e9d0efcd2e44da92779f3f5f8b33, type: 3}
 --- !u!1 &1994047819
 GameObject:
   m_ObjectHideFlags: 0
@@ -18841,6 +19623,141 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
+--- !u!1 &2049882081
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2049882082}
+  - component: {fileID: 2049882083}
+  m_Layer: 5
+  m_Name: EndSound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2049882082
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2049882081}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 185009688}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!82 &2049882083
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2049882081}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 05b18d397e4751d439a71afb359ce742, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.7
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &2071758636
 GameObject:
   m_ObjectHideFlags: 0
@@ -18853,6 +19770,7 @@ GameObject:
   - component: {fileID: 2071758639}
   - component: {fileID: 2071758638}
   - component: {fileID: 2071758640}
+  - component: {fileID: 2071758641}
   m_Layer: 0
   m_Name: Square (4)
   m_TagString: Untagged
@@ -18885,7 +19803,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 480003ab6833d594ca7a89f5fd5a0a0a, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -19002,6 +19920,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2071758641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2071758636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8d95aa75877d1448a825e9dad9467a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WallBumper
+  audioSource: {fileID: 1374038665}
+  audioClip: {fileID: 8300000, guid: 1897e9d0efcd2e44da92779f3f5f8b33, type: 3}
 --- !u!1 &2096969163
 GameObject:
   m_ObjectHideFlags: 0
@@ -19014,6 +19946,7 @@ GameObject:
   - component: {fileID: 2096969167}
   - component: {fileID: 2096969166}
   - component: {fileID: 2096969165}
+  - component: {fileID: 2096969168}
   m_Layer: 0
   m_Name: Square (3)
   m_TagString: Untagged
@@ -19068,7 +20001,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 480003ab6833d594ca7a89f5fd5a0a0a, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -19163,6 +20096,20 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &2096969168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2096969163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8d95aa75877d1448a825e9dad9467a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WallBumper
+  audioSource: {fileID: 1374038665}
+  audioClip: {fileID: 8300000, guid: 1897e9d0efcd2e44da92779f3f5f8b33, type: 3}
 --- !u!1 &2107266422
 GameObject:
   m_ObjectHideFlags: 0
@@ -19312,6 +20259,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &2113785097
 GameObject:
   m_ObjectHideFlags: 0
@@ -19536,6 +20485,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1 &2123668054
 GameObject:
   m_ObjectHideFlags: 0
@@ -19797,6 +20748,8 @@ MonoBehaviour:
   level2Peg: {fileID: -824917175029830118, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   level3Peg: {fileID: -6334574003102509060, guid: 2eb5e4a48169697489127db52c0d1348, type: 3}
   score: {fileID: 860818278}
+  audioSource: {fileID: 1136156914}
+  audioClip: {fileID: 8300000, guid: b3fbaf9681a921c40bc16e228ea3c460, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -19807,3 +20760,6 @@ SceneRoots:
   - {fileID: 940586826}
   - {fileID: 1445853195}
   - {fileID: 1701811545}
+  - {fileID: 1136156915}
+  - {fileID: 694061689}
+  - {fileID: 1374038666}

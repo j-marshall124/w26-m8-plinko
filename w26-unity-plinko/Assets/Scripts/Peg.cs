@@ -13,6 +13,9 @@ public class Peg : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     public Score score;
 
+    public AudioSource audioSource;
+    public AudioClip audioClip;
+
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -24,6 +27,8 @@ public class Peg : MonoBehaviour
         // Checks level for each peg
         if (collision.gameObject.CompareTag("Disc"))
         {
+            audioSource.PlayOneShot(audioClip);
+
             if (spriteRenderer.sprite == unlitPeg)
             {
                 score.AddPoints(pointsLevel1);

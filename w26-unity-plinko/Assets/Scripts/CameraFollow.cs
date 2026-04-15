@@ -15,8 +15,7 @@ public class CameraFollow : MonoBehaviour
         // Follow target if they exist
         if (followTarget != null)
         {
-            position.x = followTarget.position.x;
-            //position.y = followTarget.position.y - cameraY;  
+            position.x = followTarget.position.x;  
         }
         // Else look at player
         else

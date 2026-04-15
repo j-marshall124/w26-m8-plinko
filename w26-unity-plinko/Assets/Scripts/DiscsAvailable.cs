@@ -19,7 +19,7 @@ public class DiscsAvailable : MonoBehaviour
 
         if (currentDiscs <= 0)
         {
-            spriteRenderer.sprite = noDisc;
+            spriteRenderer.sprite = noDisc; // Shows player sprite with no disc available
         }
     }
 }

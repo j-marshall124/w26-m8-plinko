@@ -20,15 +20,15 @@ public class GameOver : MonoBehaviour
 
     public void EndGame()
     {
-        Time.timeScale = 0;
-        GameOverPanel.SetActive(true);
+        Time.timeScale = 0; // Freezes game
+        GameOverPanel.SetActive(true); // Show Game Over menu
         isGameOver = true;
     }
 
     public void StartGame()
     {
-        Time.timeScale = 1;
-        GameOverPanel.SetActive(false);
+        Time.timeScale = 1; // Unfreezes game
+        GameOverPanel.SetActive(false); // Hide Game Over menu
         isGameOver = false;
     }
 }
