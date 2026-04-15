@@ -11,3 +11,6 @@ Level 2: 25 points
 Level 3: 50 points  
 
 Well points are labelled above the corresponding well
+
+All art was done by me  
+All audio is from https://opengameart.org/
